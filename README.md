@@ -2,7 +2,7 @@
 
 *Linguagens de Programação I - 2019/2020*
 
-# Ficha de Exercícios - 1
+# Ficha de Exercícios - 1 - Introdução ao VS Code e Debugger
 
 Na resolução destes exercícios deve ser utilizada a Linguagem de Programação C. Para além da correta implementação dos requisitos, tenha em conta os seguintes aspetos:
 
@@ -10,7 +10,7 @@ Na resolução destes exercícios deve ser utilizada a Linguagem de Programaçã
 
 - O código deve compilar sem erros ou *warnings* utilizando o *gcc* com as seguintes flags:
 
-- `gcc -Wall -Wextra -Wpedantic -g exercicio1.c -o exercicio1`
+- `gcc -Wall -Wextra -Wpedantic -ansi -g exercicio1.c -o exercicio1`
 
 - Tenha em atenção os nomes dados das variáveis, para que sejam indicadores daquilo que as mesmas vão conter.
 
@@ -22,65 +22,242 @@ Na resolução destes exercícios deve ser utilizada a Linguagem de Programaçã
 
 - Deve usar a função `printf` e `scanf` para resolver exercícios.
 
+**Objetivo:** este laboratório tem como objetivo familiarizar-se com a ferramenta VS Code e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
+
+ Laboratório 1: Introdução ao VS Code e Debugger
+Objetivo: este laboratório tem como objetivo familiarizar-se com a ferramenta VS Code e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará m conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. OS exercicios em C deveráo ser submetidos no Moodle, dentro de um ZIP com o nome P_Lab1_Numero_NomeApelido.zip
 
 
-1. Implemente um programa que escreve no ecrã a frase "O primeiro programa nunca se esquece!".
+## Exercício 1
+*	Instale a aplicação VS Code conforme explicado nos slides da aula. 
+*	Abra o workspace criado. 
+a) Implemente agora o pequeno e famoso código do “Hello world”:
+b) Crie um ficheiro novo intitulado lab1_ex1.c, com extensão .c.
+Escreva (não copie!) o seguinte código:
+```
+#include <stdio.h>
 
-2. O que faz o seguinte programa?
+/* Isto é um comentário.
+Primeiro programa
+na linguagem C.  */
 
-   ```c
-   #include <stdio.h>
-   
-   int main(void)
-   {
-   	int x;
-   	scanf( "%d", &x );
-   	printf("%d\n", 2*x );
-   	return 0;
-   }
-   ```
+int main (void)
+{
+    printf("Hello World!\n"); 
+    return 0;
+}
+```
+c)	Abra o terminal (Ctrl + ç)
+d)	Escreva a instrução para compilar o código:
+gcc -Wall -Wpedantic -Wextra -ansi -g lab1_ex1.c -o ola
+e)	Execute o código:
+f)	./ola
 
-3. Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius. A fórmula de conversão é: C = 5.0 ∗ (F − 32.0)/9.0, sendo C é a temperatura em graus Celsius e F a temperatura em graus Fahrenheit. 
+Sugestões: 
+*	Na escrita de código, respeite sempre a indentação (colocação de novas linhas e texto “avançado”). 
+*	Não utilize carateres com acentos ou “ç”, pois não são reconhecidos pelo compilador.
+*	Nunca copie código escrito em processadores de texto. Muitas vezes código editado em processadores de texto ficam com as aspas desformatadas, em vez de " " fica “ ”. Exemplo: printf("Hello World!\n"); é diferente de printf(“Hello World!\n”);
 
-2. Leia o valor do raio de um círculo. Calcule e imprima a área do círculo correspondente. A área do círculo é π ∗ raio² , considere π = 3.141592 (constante).
+## Introdução ao Debugger
+O debugger (depurador) é um programa usado para testar outro programa e fazer sua depuração, que consiste em encontrar os defeitos do programa. Nós usamos o debugger gdb, que foi instalado se seguiu os passos dos slides.
+Como utilizar:
+1.	Abra a barra lateral do debugger, premindo ![](debugger.png)  ou as teclas Ctrl + Shift + D.
+2.	Coloque um breakpoint (ponto de paragem de execução) numa determinada instrução do código, clicando no numero de uma linha do código. Aparecerá uma bola vermelha sobre o número da linha e esta ficará vermelha, tal como na figura em baixo. Pode adicionar tantos breakpoints quantos queira.
+3.	Uma vez o código escrito, premir F5 ou  ![](start_debug.png) . 
+*	O código executará até ao primeiro breakpoint onde a execução será interrompida. 
+*	Abrirá uma barra lateral esquerda onde poderá ver as variáveis existentes e seus valores
+*	Na janela “watch” pode adicionar variáveis ou expressões que quer avaliar.
+4.	Os comandos de controlo do debugger são:
+*	![](run.png)  correr até ao próximo breakpoint, ou até ao fim se não houver mais breakpoints (F5).
+*	![](step.png) executar a próxima instrução (F10)
+*	![](step_in.png) entrar dentro da função (F11)
+*	![](step_out.png) sair dentro de uma função (Shift + F11)
+*	![](restart.png) recomeçar (Ctrl + Shift + F5)
+*	![](stop.png) parar (Shift + F5)
 
-3. Faça um programa que peça ao utilizador 2 valores inteiros e coloque o primeiro valor numa variável chamada de A e o segundo valor noutra variável chamada de B. Em seguida, o seu programa deverá trocar o conteúdo destas variáveis e imprimir no ecrã o que cada variável contém.
-   
-4. Faça um programa que peça ao utilizador 4 valores inteiros. Coloque estes valores nas variáveis a, b, c, d e imprima no ecrã o resultado da seguinte expressão:(a + b + c) x d
-   
-5. Faça um programa que peça ao utilizador 4 notas de um aluno e imprima no ecrã a média desse aluno. 
-   
-8. Considere um programa com as seguintes variáveis e respetivas inicializações:
+## Exercício 2
+Crie o ficheiro lab1_ex2.c com o seguinte código:
+```
+#include <stdio.h>
+int main (void)
+{
+    /* Declaracao de dados */
+    int centenas;
+    int dezenas;
+    int unidades;
+    int numero;
+    
+    /* Processamento e apresentação de resultados */
+    centenas = 3;
+    dezenas = 5;
+    unidades = 2;
 
-    `unsigned char c = 3.14;` 
-    `unsigned short int i = 3.14; `
-    `unsigned int j = ‘B’; `
-    `float f = ‘C’; `
+    printf("Este programa congrega, num numero, %d centenas, %d dezenas e %d unidades\n", centenas, dezenas, unidades);
 
-    Usando o debugger (sem recorrer a `printf()`) verifique:
+    numero = centenas*100+dezenas*10+unidades*1;
 
-    - Qual é o valor efetivo `f`?
+    printf("Resultado: %d\n", numero);
+    return 0;
+}
+```
 
-    - Qual o valor das variáveis quando se soma o valor 2 a cada uma delas?
+Faça os seguintes passos:
+*	Insira um breakpoint na declaração da variável centenas. 
+*	Corra o debugger (F5).
+*	veja o valor de todas as variáveis. Os valores são espectáveis?
+*	Execute linha a linha para ver o que acontece na janela Variables. 
+*	Adicione em watch uma expressão para ser avaliada, por exemplo escreva 
+```centenas*100+dezenas*10+unidades*1.```
 
-9. Faça um programa que, a partir da leitura  das medidas dos lados de um retângulo (comprimento e largura), lidos do teclado, calcule e imprima a área e o perímetro do retângulo.
+### Exercício 3
+Crie o ficheiro lab1_ex3.c e insira o seguinte código
+```
+#include <stdio.h>
+int main() 
+{
+    Char c = 'r' 
+    short j = 127; 
+    int k 32767; 
 
-10. Faça um programa que leia pelo teclado um valor, em euros, converta e imprima o mesmo num valor     em dólares. Considere que €1 seja equivalente a US$ 1,23.
+    printf("c= %c\n", c); 
+    c=C+1;
+    Printf("c= %c\n, c); 
+    c=c+1; 
+    printF("c= %c\n", c); 
+    printf("j= %d\n", j); 
+    j=j-1;
+    printf("j= %d\n", j); 
+    j++; 
+    printf("j= %d\n", j); 
+    printf("k= %d\n", k); 
+    k -=4;
+    printf("k= %d\n", k); 
+    k = k+5; 
+    printf("k= %d\n", k); 
+    printf("Valores finais:\n\tc = %c\n\tj = %d",c,j); 
+    printf("\n\tk = %d\n\n", k);
+    printf("y= %d\n", y); 
+    return 0;
+}
+```
+a)	Se vir, no VS Code vários identificadores estão sublinhados a vermelho (exemplo: ![](syntaxerror.png) ). É o VS Code a indicar que existe um erro nessa instrução. Corrija todos os erros sintácticos do programa. 
+b)	Execute com o debugger, verificando instrução a instrução o que acontece às variáveis.
+ 
+### Exercício 4
+Examine o programa seguinte para calcular a média de avaliação contínua:
+```
+#include <stdio.h>
+int main() 
+{
+    int notaTeste1 = 15, notaTeste2 = 15, notaTeste3 = 17; 
+    double media;
 
-11. A condição física de uma pessoa pode ser medida com base no cálculo do Índice de Massa Corporal     (IMC). O mesmo é calculado dividindo-se o peso desta pessoa em kg pelo quadrado da sua altura em m. Escreva um programa que leia o peso em kilograma e a altura de uma pessoa em metros, calcule e mostre o IMC. 
+    media = (notaTeste1 + notaTeste2 + notaTeste3)/3;
+    printf("Nota final : %f valores\n", media);
+    return 0;
+}
+```
 
-    *Se as entradas fossem 70.0kg para o peso e 1.80m para altura então a saída esperada seria aproximadamente 21.60.*
+a)	Compile, corra o programa e examine a sua saída.  Concorda com o resultado? O que terá acontecido?
+b)	Substitua a instrução do cálculo da média pela instrução seguinte e observe o que é escrito pelo programa. 
+          media = (notaTeste1 + notaTeste2 + notaTeste3)/3.0;
+c)	Na instrução printf substitua %f por %3.0f e observe o resultado.
+d)	Na instrução printf substitua %f por %3.2f e observe o resultado
 
-12. Escreva um programa que lê um certo número de segundos e dá o correspondente aos Dias, Horas, Minutos e Segundos.
 
-     *Exemplo: 228184 segundos correspondem a 2 Dias e 15 Horas 23 Minutos e 4 Segundos.*
+### Exercício 5
+O programa seguinte usa o tipo de dado elementar short:
+```
+# include <stdio.h>
+int main() 
+{
+    short valor= 32; 
+    int tamanho;
 
-11. A importância de €780.000,00 será dividida entre três vencedores de um concurso. Sendo que da quantia total:
+    tamanho = sizeof(valor);
+    
+    printf("Um short int : %d\n",valor); 
+    printf("espaco de memoria ocupado: %d bytes", tamanho);
+    return 0;
+}
+```
+a)	Compile e execute o programa. O que aparece escrito no monitor? 
+b)	Edite o programa e altere o valor 32 para um outro valor inteiro relativamente baixo, digamos 100. Compile e corra o programa. 
+c)	Altere o valor para 90000 e tente compilar o programa. O que é que acontece? Porquê?
+d)	Edite o programa e altere a palavra “short” para “int”. Compile e corra o programa. Qual a diferença entre esta e a alínea anterior?
 
-    - O primeiro vencedor receberá 46%
+## Exercício 6
+O programa seguinte usa o tipo de dado elementar float:
+```
+#include <stdio.h>
+int main() 
+{
+    float valor= 900.25;
+    int tamanho;
 
-    - O segundo receberá 32%
+    tamanho = sizeof(valor);
+    printf("Um float : %f",valor); 
+    printf("espaco de memoria ocupado: %d bytes", tamanho);
+    return 0;
+}
+```
+a)	Compile e execute o programa. O que aparece escrito no monitor?
+b)	O que irá aparecer no monitor se alterar o especificador de formato de %f para %E.
+c)	E se alterar para %e?
 
-    - O terceiro receberá o restante
+## Exercício 7
+O programa seguinte usa o tipo de dados elementar char:
+```
+#include <stdio.h>
+int main() 
+{
+    char ch = 'A'; 
+    printf("Um char : %c\n", ch); 
+    printf("Outro char : %c\n", ch + 32); 
+    printf("O carater %c tem o codigo ASCII %d\n", 100, 100);  
+    return 0;
+}
+```
+a)	Compile e execute o programa. O que aparece escrito no monitor? 
+b)	Troque o 'A' por 'Z' compile e corra o programa. 
+c)	O que irá aparecer no monitor se alterar o especificador de formato de %c para %d. (Nota: o código ASCII do carácter ‘Z’ é 90)
 
-    Calcule e imprima a quantia ganha por cada um dos vencedores.
+
+## Exercício 8 - Pandora
+
+a) Aceda à plataforma PANDORA (https://saturn.ulusofona.pt/).
+b) Para conseguir fazer o login deverá ter uma conta no github (https://github.com/). Se criar uma conta nova no github deverá usar o seu email institucional e colocar o seu nome e número mecanográfico como nome de utilizador. Exemplo ```anasilva21908445```.
+
+*Nota. O acesso ao Pandora é feito com as credenciais do github. Isso significa que o Pandora não guarda passwords. A única informação que é passada ao Pandora é o vosso nome de utilizador.*
+**Se perder a password, deve recuperar a password utilizando o mecanismo disponibilizado pelo github. NUNCA DEVERÁ CRIAR UMA CONTA NOVA.**
+**Se criar uma conta nova irá perder todas as avaliações feitas pelo pandora.**
+
+c) Após login no PANDORA, clickar em Contests, e depois completar a informação colocando o número e o nome completo.
+
+d) Peça ao professor para activar a sua conta.
+
+e)  Escreva o serguinte programa num ficheiro .c.
+```
+#include <stdio.h>
+
+int main() 
+{
+	int numero;
+	int resultado;
+	
+    print("Insira um numero\n");
+    scanf("%d", &numero)
+
+	resultado = numero * 2;
+    
+    print("Numero = %d, Numero*3 = %d\", numero, resultado);
+
+}
+```
+Sem alterar absolutamente nada, submeta o ficheiro no PANDORA no contest: LP12021EX0
+
+f) Verifique a classificação obtida e os erros de compilação reportados pelo PANDORA. Para isso clique na cruz vermelha.
+
+g) Corrija os erros de compilação e submeta de novo e verifique a nota obtida.
+
+e) O programa deverá ler um número e imprimir esse número multiplicado por 3. Verifique os resultados dos testes e olhando para a informação disponibilizada. Utilizando essa informação, altere o código e submeta de novo até obter a classificação de 20 Valores.

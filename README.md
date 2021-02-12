@@ -10,8 +10,8 @@
 ## Exercício 1
 *	Instale a aplicação VS Code conforme explicado nos slides da aula. 
 *	Abra o workspace criado. 
-a) Implemente agora o pequeno e famoso código do “Hello world”:
-b) Crie um ficheiro novo intitulado lab1_ex1.c, com extensão .c.
+1.	Implemente agora o pequeno e famoso código do “Hello world”:
+2.	Crie um ficheiro novo intitulado lab1_ex1.c, com extensão .c.
 Escreva (não copie!) o seguinte código:
 ```
 #include <stdio.h>
@@ -26,11 +26,11 @@ int main (void)
     return 0;
 }
 ```
-c)	Abra o terminal (Ctrl + ç)
-d)	Escreva a instrução para compilar o código:
-gcc -Wall -Wpedantic -Wextra -ansi -g lab1_ex1.c -o ola
-e)	Execute o código:
-f)	./ola
+3.	Abra o terminal (Ctrl + ç)
+4.	Escreva a instrução para compilar o código:
+```gcc -Wall -Wpedantic -Wextra -ansi -g lab1_ex1.c -o ola```
+5.	Execute o código:
+6.	```./ola```
 
 Sugestões: 
 *	Na escrita de código, respeite sempre a indentação (colocação de novas linhas e texto “avançado”). 
@@ -43,16 +43,16 @@ Como utilizar:
 1.	Abra a barra lateral do debugger, premindo ![](debugger.png)  ou as teclas Ctrl + Shift + D.
 2.	Coloque um breakpoint (ponto de paragem de execução) numa determinada instrução do código, clicando no numero de uma linha do código. Aparecerá uma bola vermelha sobre o número da linha e esta ficará vermelha, tal como na figura em baixo. Pode adicionar tantos breakpoints quantos queira.
 3.	Uma vez o código escrito, premir F5 ou  ![](start_debug.png) . 
-*	O código executará até ao primeiro breakpoint onde a execução será interrompida. 
-*	Abrirá uma barra lateral esquerda onde poderá ver as variáveis existentes e seus valores
-*	Na janela “watch” pode adicionar variáveis ou expressões que quer avaliar.
+	*	O código executará até ao primeiro breakpoint onde a execução será interrompida. 
+	*	Abrirá uma barra lateral esquerda onde poderá ver as variáveis existentes e seus valores
+	*	Na janela “watch” pode adicionar variáveis ou expressões que quer avaliar.
 4.	Os comandos de controlo do debugger são:
-*	![](run.png)  correr até ao próximo breakpoint, ou até ao fim se não houver mais breakpoints (F5).
-*	![](step.png) executar a próxima instrução (F10)
-*	![](step_in.png) entrar dentro da função (F11)
-*	![](step_out.png) sair dentro de uma função (Shift + F11)
-*	![](restart.png) recomeçar (Ctrl + Shift + F5)
-*	![](stop.png) parar (Shift + F5)
+	*	![](run.png)  correr até ao próximo breakpoint, ou até ao fim se não houver mais breakpoints (F5).
+	*	![](step.png) executar a próxima instrução (F10)
+	*	![](step_in.png) entrar dentro da função (F11)
+	*	![](step_out.png) sair dentro de uma função (Shift + F11)
+	*	![](restart.png) recomeçar (Ctrl + Shift + F5)
+	*	![](stop.png) parar (Shift + F5)
 
 ## Exercício 2
 Crie o ficheiro lab1_ex2.c com o seguinte código:
@@ -119,8 +119,8 @@ int main()
     return 0;
 }
 ```
-a)	Se vir, no VS Code vários identificadores estão sublinhados a vermelho (exemplo: ![](syntaxerror.png) ). É o VS Code a indicar que existe um erro nessa instrução. Corrija todos os erros sintácticos do programa. 
-b)	Execute com o debugger, verificando instrução a instrução o que acontece às variáveis.
+1.	Se vir, no VS Code vários identificadores estão sublinhados a vermelho (exemplo: ![](syntaxerror.png) ). É o VS Code a indicar que existe um erro nessa instrução. Corrija todos os erros sintácticos do programa. 
+2.	Execute com o debugger, verificando instrução a instrução o que acontece às variáveis.
  
 ### Exercício 4
 Examine o programa seguinte para calcular a média de avaliação contínua:
@@ -137,11 +137,11 @@ int main()
 }
 ```
 
-a)	Compile, corra o programa e examine a sua saída.  Concorda com o resultado? O que terá acontecido?
-b)	Substitua a instrução do cálculo da média pela instrução seguinte e observe o que é escrito pelo programa. 
+1.	Compile, corra o programa e examine a sua saída.  Concorda com o resultado? O que terá acontecido?
+2.	Substitua a instrução do cálculo da média pela instrução seguinte e observe o que é escrito pelo programa. 
           media = (notaTeste1 + notaTeste2 + notaTeste3)/3.0;
-c)	Na instrução printf substitua %f por %3.0f e observe o resultado.
-d)	Na instrução printf substitua %f por %3.2f e observe o resultado
+3.	Na instrução printf substitua %f por %3.0f e observe o resultado.
+4.	Na instrução printf substitua %f por %3.2f e observe o resultado
 
 
 ### Exercício 5
@@ -160,10 +160,10 @@ int main()
     return 0;
 }
 ```
-a)	Compile e execute o programa. O que aparece escrito no monitor? 
-b)	Edite o programa e altere o valor 32 para um outro valor inteiro relativamente baixo, digamos 100. Compile e corra o programa. 
-c)	Altere o valor para 90000 e tente compilar o programa. O que é que acontece? Porquê?
-d)	Edite o programa e altere a palavra “short” para “int”. Compile e corra o programa. Qual a diferença entre esta e a alínea anterior?
+1.	Compile e execute o programa. O que aparece escrito no monitor? 
+2.	Edite o programa e altere o valor 32 para um outro valor inteiro relativamente baixo, digamos 100. Compile e corra o programa. 
+3.	Altere o valor para 90000 e tente compilar o programa. O que é que acontece? Porquê?
+4.	Edite o programa e altere a palavra “short” para “int”. Compile e corra o programa. Qual a diferença entre esta e a alínea anterior?
 
 ## Exercício 6
 O programa seguinte usa o tipo de dado elementar float:
@@ -180,9 +180,9 @@ int main()
     return 0;
 }
 ```
-a)	Compile e execute o programa. O que aparece escrito no monitor?
-b)	O que irá aparecer no monitor se alterar o especificador de formato de %f para %E.
-c)	E se alterar para %e?
+1.	Compile e execute o programa. O que aparece escrito no monitor?
+2.	O que irá aparecer no monitor se alterar o especificador de formato de %f para %E.
+3.	E se alterar para %e?
 
 ## Exercício 7
 O programa seguinte usa o tipo de dados elementar char:
@@ -197,25 +197,25 @@ int main()
     return 0;
 }
 ```
-a)	Compile e execute o programa. O que aparece escrito no monitor? 
-b)	Troque o 'A' por 'Z' compile e corra o programa. 
-c)	O que irá aparecer no monitor se alterar o especificador de formato de %c para %d. (Nota: o código ASCII do carácter ‘Z’ é 90)
+1.	Compile e execute o programa. O que aparece escrito no monitor? 
+2.	Troque o 'A' por 'Z' compile e corra o programa. 
+3.	O que irá aparecer no monitor se alterar o especificador de formato de %c para %d. (Nota: o código ASCII do carácter ‘Z’ é 90)
 
 
 ## Exercício 8 - Pandora
 
-a) Aceda à plataforma PANDORA (https://saturn.ulusofona.pt/).
-b) Para conseguir fazer o login deverá ter uma conta no github (https://github.com/). Se criar uma conta nova no github deverá usar o seu email institucional e colocar o seu nome e número mecanográfico como nome de utilizador. Exemplo ```anasilva21908445```.
+1.	Aceda à plataforma PANDORA (https://saturn.ulusofona.pt/).
+2.	Para conseguir fazer o login deverá ter uma conta no github (https://github.com/). Se criar uma conta nova no github deverá usar o seu email institucional e colocar o seu nome e número mecanográfico como nome de utilizador. Exemplo ```anasilva21908445```.
 
 *Nota. O acesso ao Pandora é feito com as credenciais do github. Isso significa que o Pandora não guarda passwords. A única informação que é passada ao Pandora é o vosso nome de utilizador.*
 **Se perder a password, deve recuperar a password utilizando o mecanismo disponibilizado pelo github. NUNCA DEVERÁ CRIAR UMA CONTA NOVA.**
 **Se criar uma conta nova irá perder todas as avaliações feitas pelo pandora.**
 
-c) Após login no PANDORA, clickar em Contests, e depois completar a informação colocando o número e o nome completo.
+3.	Após login no PANDORA, clickar em Contests, e depois completar a informação colocando o número e o nome completo.
 
-d) Peça ao professor para activar a sua conta.
+4.	Peça ao professor para activar a sua conta.
 
-e)  Escreva o serguinte programa num ficheiro .c.
+5.	Escreva o serguinte programa num ficheiro .c.
 ```
 #include <stdio.h>
 
@@ -235,8 +235,8 @@ int main()
 ```
 Sem alterar absolutamente nada, submeta o ficheiro no PANDORA no contest: LP12021EX0
 
-f) Verifique a classificação obtida e os erros de compilação reportados pelo PANDORA. Para isso clique na cruz vermelha.
+6.	Verifique a classificação obtida e os erros de compilação reportados pelo PANDORA. Para isso clique na cruz vermelha.
 
-g) Corrija os erros de compilação e submeta de novo e verifique a nota obtida.
+7.	Corrija os erros de compilação e submeta de novo e verifique a nota obtida.
 
-e) O programa deverá ler um número e imprimir esse número multiplicado por 3. Verifique os resultados dos testes e olhando para a informação disponibilizada. Utilizando essa informação, altere o código e submeta de novo até obter a classificação de 20 Valores.
+8.	O programa deverá ler um número e imprimir esse número multiplicado por 3. Verifique os resultados dos testes e olhando para a informação disponibilizada. Utilizando essa informação, altere o código e submeta de novo até obter a classificação de 20 Valores.

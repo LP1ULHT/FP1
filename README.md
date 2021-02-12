@@ -1,6 +1,5 @@
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
-*Linguagens de Programação I - 2019/2020*
 
 # Ficha de Exercícios - 1 - Introdução ao VS Code e Debugger
 

@@ -3,29 +3,9 @@
 
 # Ficha de Exercícios - 1 - Introdução ao VS Code e Debugger
 
-Na resolução destes exercícios deve ser utilizada a Linguagem de Programação C. Para além da correta implementação dos requisitos, tenha em conta os seguintes aspetos:
+**Objetivo:** esta ficha tem como objetivo familiarizar-se com a ferramenta VS Code e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
 
-- O código apresentado deve ser bem indentado. 
-
-- O código deve compilar sem erros ou *warnings* utilizando o *gcc* com as seguintes flags:
-
-- `gcc -Wall -Wextra -Wpedantic -ansi -g exercicio1.c -o exercicio1`
-
-- Tenha em atenção os nomes dados das variáveis, para que sejam indicadores daquilo que as mesmas vão conter.
-
-- Evite o uso de constantes mágicas. 
-
-- Evite duplicação de código. 
-
-- Considere a implementação de funções para melhorar a legibilidade, evitar a duplicação e criar soluções mais genéricas.
-
-- Deve usar a função `printf` e `scanf` para resolver exercícios.
-
-**Objetivo:** este laboratório tem como objetivo familiarizar-se com a ferramenta VS Code e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
-
- Laboratório 1: Introdução ao VS Code e Debugger
-Objetivo: este laboratório tem como objetivo familiarizar-se com a ferramenta VS Code e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará m conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. OS exercicios em C deveráo ser submetidos no Moodle, dentro de um ZIP com o nome P_Lab1_Numero_NomeApelido.zip
-
+*O **Exercício 8** deverá ser submetido na platadorma PANDORA. A classificação obtida na plataforma será contabilizada na componente de avaliação contínua.*
 
 ## Exercício 1
 *	Instale a aplicação VS Code conforme explicado nos slides da aula. 

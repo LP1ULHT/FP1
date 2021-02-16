@@ -197,7 +197,7 @@ int main()
     return 0;
 }
 ```
-1.	Compile e execute o programa. O que aparece escrito no monitor? 
+1.	Compile e execute o programa. O resultado é o espectável, imprime o carater 'A' e seu código ASCII? Corrija o erro.
 2.	Troque o 'A' por 'Z' compile e corra o programa. 
 3.	O que irá aparecer no monitor se alterar o especificador de formato de %c para %d. (Nota: o código ASCII do carácter ‘Z’ é 90)
 

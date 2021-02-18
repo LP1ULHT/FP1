@@ -224,12 +224,12 @@ int main()
 	int numero;
 	int resultado;
 	
-    print("Insira um numero\n");
-    scanf("%d", &numero)
+	print("Insira um numero\n");
+	scanf("%d", &numero)
 
 	resultado = numero * 2;
     
-    print("Numero = %d, Numero*3 = %d\", numero, resultado);
+	print("Numero = %d, Numero*3 = %d\", numero, resultado);
 
 }
 ```

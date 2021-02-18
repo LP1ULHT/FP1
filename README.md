@@ -239,4 +239,4 @@ Sem alterar absolutamente nada, submeta o ficheiro no PANDORA no contest: LP1202
 
 7.	Corrija os erros de compilação e submeta de novo e verifique a nota obtida.
 
-8.	O programa deverá ler um número e imprimir esse número multiplicado por 3. Verifique os resultados dos testes e olhando para a informação disponibilizada. Utilizando essa informação, altere o código e submeta de novo até obter a classificação de 20 Valores.
+8.	O programa deverá ler um número e imprimir esse número multiplicado por 3. Verifique os resultados dos testes e observe toda a informação disponibilizada. Utilizando essa informação, altere o código e submeta de novo até obter a classificação de 20 Valores.

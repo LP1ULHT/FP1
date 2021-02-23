@@ -119,8 +119,9 @@ int main()
     return 0;
 }
 ```
-1.	Se vir, no VS Code vários identificadores estão sublinhados a vermelho (exemplo: ![](syntaxerror.png) ). É o VS Code a indicar que existe um erro nessa instrução. Corrija todos os erros sintácticos do programa. 
-2.	Execute com o debugger, verificando instrução a instrução o que acontece às variáveis.
+1.	Se vir, no VS Code vários identificadores estão sublinhados a vermelho (exemplo: ![](syntaxerror.png) ). É o VS Code a indicar que existe um erro nessa instrução.
+2.	Corrija todos os erros sintácticos do programa, pois o programa no estado atual não compila. 
+3.	Execute com o debugger, verificando instrução a instrução o que acontece às variáveis.
  
 ### Exercício 4
 Examine o programa seguinte para calcular a média de avaliação contínua:

@@ -157,7 +157,7 @@ int main()
     tamanho = sizeof(valor);
     
     printf("Um short int : %d\n",valor); 
-    printf("espaco de memoria ocupado: %d bytes", tamanho);
+    printf("espaco de memoria ocupado: %d bytes\n", tamanho);
     return 0;
 }
 ```
@@ -176,8 +176,8 @@ int main()
     int tamanho;
 
     tamanho = sizeof(valor);
-    printf("Um float : %f",valor); 
-    printf("espaco de memoria ocupado: %d bytes", tamanho);
+    printf("Um float : %f\n",valor); 
+    printf("espaco de memoria ocupado: %d bytes\n", tamanho);
     return 0;
 }
 ```

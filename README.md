@@ -234,7 +234,7 @@ int main()
 
 }
 ```
-Sem alterar absolutamente nada, submeta o ficheiro no PANDORA no contest: LP12021EX0. **O Objectivo deste exercício não é que o aluno obtenha classificação máxima à primeira submissão. O objectivo é que o aluno submeta o código com erros e depois os corrija. Desta forma estará a familiarizar-se com a plataforma**
+Sem alterar absolutamente nada, submeta o ficheiro no PANDORA no contest: IC2021EX0. **O Objectivo deste exercício não é que o aluno obtenha classificação máxima à primeira submissão. O objectivo é que o aluno submeta o código com erros e depois os corrija. Desta forma estará a familiarizar-se com a plataforma**
 
 6.	Verifique a classificação obtida e os erros de compilação reportados pelo PANDORA. Para isso clique na cruz vermelha.
 

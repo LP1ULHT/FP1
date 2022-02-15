@@ -5,7 +5,9 @@
 
 **Objetivo:** esta ficha tem como objetivo familiarizar-se com o Replit e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
 
+<!---
 *O **Exercício 8** deverá ser submetido na platadorma PANDORA. A classificação obtida na plataforma será contabilizada na componente de avaliação contínua.*
+--->
 
 ## Exercício 1
 *	Aceda ao site https://replit.com/ e crie um conta

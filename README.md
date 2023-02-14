@@ -44,7 +44,7 @@ Sugestões:
 ## Introdução ao Debugger
 O debugger (depurador) é um programa usado para testar outro programa e fazer sua depuração, que consiste em encontrar os defeitos do programa. O Replit possui um compilador integrado
 
-![](Debug.jpg)
+![](debugger_interface.png)
 
 Como utilizar:
 1.	Na barra lateral pressione o ícon do Debugger

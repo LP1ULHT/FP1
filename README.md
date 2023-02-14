@@ -32,7 +32,10 @@ int main (void)
 3.	Compile e execute o programa pressionando o botão **Run**
 4.	Na consola de terminal - consola lateral
 5.	Escreva a instrução para compilar o código:
-```gcc -Wall -Wpedantic -Wextra -Wvla -g main.c -o main```
+```gcc -Wall -Wpedantic -Wextra -Wvla -g main.c -o main``` ou
+![](showhidden.jpeg)
+![](makefile.jpeg)
+
 5.	Execute o código:
 6.	```./main```
 

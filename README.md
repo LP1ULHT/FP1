@@ -33,8 +33,12 @@ int main (void)
 4.	Na consola de terminal - consola lateral
 5.	Escreva a instrução para compilar o código:
 ```gcc -Wall -Wpedantic -Wextra -Wvla -g main.c -o main``` ou
+
 ![](showhidden.png)
-![](makefile.jpeg)
+
+Edite o arquivo tal como descrito abaixo
+
+![](makefile.png)
 
 5.	Execute o código:
 6.	```./main```

@@ -5,6 +5,10 @@
 
 **Objetivo:** esta ficha tem como objetivo familiarizar-se com o Replit e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
 
+## Interface do Replit
+
+![](Interface_replit.png)
+
 <!---
 *O **Exercício 8** deverá ser submetido na platadorma PANDORA. A classificação obtida na plataforma será contabilizada na componente de avaliação contínua.*
 --->
@@ -47,10 +51,6 @@ Sugestões:
 *	Na escrita de código, respeite sempre a indentação (colocação de novas linhas e texto “avançado”). 
 *	Não utilize carateres com acentos ou “ç”, pois não são reconhecidos pelo compilador.
 *	Nunca copie código escrito em processadores de texto. Muitas vezes código editado em processadores de texto ficam com as aspas desformatadas, em vez de " " fica “ ”. Exemplo: printf("Hello World!\n"); é diferente de printf(“Hello World!\n”); (se não percebeu a diferença, leia novamente com atenção!)
-
-## Interface do Replit
-
-![](Interface_replit.png)
 
 ## Introdução ao Debugger
 O debugger (depurador) é um programa usado para testar outro programa e fazer sua depuração, que consiste em encontrar os defeitos do programa. O Replit possui um compilador integrado

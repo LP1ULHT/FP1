@@ -64,8 +64,9 @@ Como utilizar:
 	*	O código executará até ao primeiro breakpoint onde a execução será interrompida. 
 	*	Na barra lateral esquerda, em baixo, poderá ver as variáveis existentes e seus valores
 4.	Os comandos de controlo do debugger são:
-	*	![](run.png)  correr até ao próximo breakpoint, ou até ao fim se não houver mais breakpoints (F5).
-	*	![](step.png) executar a próxima instrução (F10)
+	*	![](next_breakpoint.png)  correr até ao próximo breakpoint, ou até ao fim se não houver mais breakpoints (F5).
+	*	![](next_step.png) executar a próxima instrução (F10)
+	*	![](skip_step.png) pula o passo atual
 	*	![](stop.png) parar (Shift + F5)
 
 ## Exercício 2

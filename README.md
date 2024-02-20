@@ -218,14 +218,16 @@ O programa seguinte usa o tipo de dados elementar char:
 #include <stdio.h>
 int main() 
 {
-    char ch = 'A'; 
+    char ch = 'A';
+    printf("Insira letra de A a Z:");
+    scanf("%d", &numero)
     printf("Um char : %c\n", ch); 
     printf("Outro char : %c\n", ch + 32); 
     printf("O carater %c tem o codigo ASCII %d\n", 100, 100);  
     return 0;
 }
 ```
-1.	Compile e execute o programa. O resultado é o espectável, imprime o carater 'A' e seu código ASCII? Corrija o erro.
+1.	Compile e execute o programa. O resultado é o espectável, se inseres 'A', imprime o carater 'A' e seu código ASCII? Corrija o erro.
 2.	Troque o 'A' por 'Z' compile e corra o programa. 
 3.	O que irá aparecer no monitor se alterar o especificador de formato de %c para %d. (Nota: o código ASCII do carácter ‘Z’ é 90)
 

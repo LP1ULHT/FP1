@@ -220,7 +220,7 @@ int main()
 {
     char ch = 'A';
     printf("Insira letra de A a Z:");
-    scanf("%d", &numero)
+    scanf("%c", &ch);
     printf("Um char : %c\n", ch); 
     printf("Outro char : %c\n", ch + 32); 
     printf("O carater %c tem o codigo ASCII %d\n", 100, 100);  

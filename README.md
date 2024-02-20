@@ -3,7 +3,21 @@
 
 # Ficha de Exercícios - 1 - Introdução ao replit.com
 
-**Objetivo:** esta ficha tem como objetivo familiarizar-se com o Replit e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
+**Objetivo:** esta ficha tem como objetivo familiarizar-se com o WSL+VsCode ou alternavamente Replit e a forma de escrever, compilar e executar um programa. Irá aprender igualmente aspectos básicos do C. Finalmente, realizará um conjunto de exercícios de código C, explorando tipos de variáveis e usando as funções de leitura e escrita. 
+
+## Interface do VSCode no WSL
+
+Sigam os seguintes videos.
+
+1 - Instalar WSL
+https://youtu.be/L6vhzhQkLX8?si=QfqiISWyitkdj95K
+
+2 - Configurar o VSCode 
+https://youtu.be/f9V8xmyrUrU?si=5GHRgaJrzx-MB7de
+
+3 - Correr o Hello World
+https://youtu.be/GR6DHz0UKxM?si=FqZDHZFPvt_toDx8
+
 
 ## Interface do Replit
 
